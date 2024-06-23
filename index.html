@@ -178,7 +178,7 @@
               methods often necessitate fine-tuning of the model or concatenation of latent vectors, leading to
               drawbacks such as generation failure due to overfitting and inconsistent foreground generation. In this
               paper, we argue that the current large models are powerful enough to generate realistic images without
-              further tuning. Hence, we introduce PILOT (in<strong>P</strong>ainting v<strong>I</strong>a
+              further tuning. Hence, we introduce <strong>PILOT</strong> (in<strong>P</strong>ainting v<strong>I</strong>a
               <strong>L</strong>atent <strong>O</strong>p<strong>T</strong>imization), an optimization approach grounded
               on a novel semantic centralization and background loss to identify latent spaces capable of generating
               inpainted regions that exhibit high fidelity to user-provided prompts while maintaining coherence with the
@@ -221,12 +221,11 @@
           </div>
         </div>
         <p>
-          We present a novel image inpainting framework, <strong>PILOT</strong>, comprising a novel optimization stage and a blending stage to enable multi-modality control through conditions. (a) First we apply our latent optimization strategy, where we adjust the direction of gradients and identify the optimal latent vector every &#964; steps, followed by the normal reverse diffusion process. After that, we apply the latent blending strategy until the denoising process is complete. (b) We depict how we optimize the latent vector with prompts from one or more modalities as conditions.
+          We present a novel image inpainting framework, <strong>PILOT</strong>, comprising a novel optimization stage and a blending stage to enable multi-modality control through conditions. (a) First we apply our latent optimization strategy, where we adjust the direction of gradients and identify the optimal latent vector every <i>&#964;</i> steps, followed by the normal reverse diffusion process. After that, we apply the latent blending strategy until the denoising process is complete. (b) We depict how we optimize the latent vector with prompts from one or more modalities as conditions.
         </p>
       </div>
     </div>
   </section>
-
 
 
   <section class="hero is-light is-small">
@@ -244,32 +243,32 @@
           <div class="content">
 
             <p>
-              PILOT can generate images in the guidance of multi conditions. <br>
+              PILOT can generate images in the guidance of multi-modality conditions. <br>
             </p>
             <div class="publication-img">
               <p>
-                You can use text prompts to guide the inpainting process. <br>
+                With text prompts: <br>
               </p>
               <img id="examples1" src="static/images/text_add.png" />
               <!-- <p style="text-align: center; font-weight: bold; font-size: 24px;">Text prompts</p> -->
               <p>
-                <br> And use multi-modality-based prompts.
+                <br> With spatial controls: 
               </p>
               <img id="examples2" src="static/images/controlNet_results.png" />
               <!-- <p style="text-align: center; font-weight: bold; font-size: 24px;">Multi-modality-based prompts</p> -->
               <p>
-                <br> And use image prompts.
+                <br> With image prompts: 
               </p>
               <img id="examples3" src="static/images/ip_adapter_a.png" />
               <img id="examples4" src="static/images/ip_adapter_b.png" />
               <!-- <p style="text-align: center; font-weight: bold; font-size: 24px;">Image prompts</p> -->
               <p>
-                <br> You can also use subject guidance to guide the inpainting process.
+                <br> With reference instances: 
               </p>
               <img id="examples5" src="static/images/subject.png" />
               <!-- <p style="text-align: center; font-weight: bold; font-size: 24px;">Subject guidance</p> -->
               <p>
-                <br> Or try personalize style.
+                <br> And achieve fine-grained editing step by step:
               </p>
               <img id="examples6" src="static/images/personalize.png" />
               <img id="examples7" src="static/images/monai.png" />
