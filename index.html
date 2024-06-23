@@ -43,24 +43,24 @@
               Space Optimization</h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                <a href="https://github.com/Lingzhi-Pan">Lingzhi Pan</a><sup><span>&#9824;</span></sup>,</span>
+                <a href="https://github.com/Lingzhi-Pan">Lingzhi Pan</a><sup><span>1</span></sup>,</span>
               <span class="author-block">
                 <a href="https://people.epfl.ch/tong.zhang?lang=en">Tong
-                  Zhang</a><sup><span>&#9827;</span></sup>,</span>
+                  Zhang</a><sup><span>2</span></sup>,</span>
               <span class="author-block">
-                <a href="https://github.com/Alex-Lord">Bingyuan CHEN</a><sup><span>&#9824;</span></sup>,<br>
+                <a href="https://github.com/Alex-Lord">Bingyuan CHEN</a><sup><span>1</span></sup>,<br>
               </span>
               <span class="author-block">
-                <a href="https://github.com/zaqai">Qi Zhou</a><sup><span>&#9824;</span></sup>,
+                <a href="https://github.com/zaqai">Qi Zhou</a><sup><span>1</span></sup>,
               </span>
               <span class="author-block">
-                <a href="https://gr.xjtu.edu.cn/en/web/wei.ke">Wei Ke</a><sup><span>&#9824;</span></sup>,
+                <a href="https://gr.xjtu.edu.cn/en/web/wei.ke">Wei Ke</a><sup><span>1</span></sup>,
               </span>
               <span class="author-block">
-                <a href="https://people.epfl.ch/sabine.susstrunk">Sabine Susstrunk</a><sup><span>&#9827;</span></sup>,
+                <a href="https://people.epfl.ch/sabine.susstrunk">Sabine Susstrunk</a><sup><span>2</span></sup>,
               </span>
               <span class="author-block">
-                <a href="https://people.epfl.ch/mathieu.salzmann">Mathieu Salzmann</a><sup><span>&#9827;</span></sup>,
+                <a href="https://people.epfl.ch/mathieu.salzmann">Mathieu Salzmann</a><sup><span>2</span></sup>,
               </span>
             </div>
 
@@ -69,9 +69,9 @@
           </div> -->
 
             <div class="is-size-6 publication-authors">
-              <span class="author-block new-line"><sup><span>&#9824;</span> </sup>Xi'an Jiaotong University
-                <sup><span>&#9824;</span> </sup> EPFL</span> <br>
-              <!-- <span class="author-block new-line"><sup><span>&#9827;</span> </sup>Corresponding author at Amazon</span> -->
+              <span class="author-block new-line"><sup><span>1</span> </sup>Xi'an Jiaotong University
+                <sup><span>2</span> </sup> EPFL</span> <br>
+              <!-- <span class="author-block new-line"><sup><span>2</span> </sup>Corresponding author at Amazon</span> -->
             </div>
 
             <div class="column has-text-centered">
@@ -128,8 +128,9 @@
         <!-- <video id="teaser" autoplay muted loop playsinline height="100%" controls>
         <source src="./static/videos/Diffuse_to_Choose_DemoReel.mp4" type="video/mp4">
       </video> -->
-
-        <img src="https://oss.zaqai.com/img/202403230201291.gif" alt="">
+      <div style="text-align: center;">
+        <img src="https://oss.zaqai.com/img/202403230201291.gif" alt="" style="display: inline-block; width: 80%; height: auto;">
+      </div>
       </div>
     </div>
   </section>
@@ -200,9 +201,7 @@
 
   <section class="hero is-light is-small">
     <div class="container is-max-desktop">
-      <div class="hero-body">          <p>
-  We present a novel image inpainting framework, <strong>PILOT</strong>, comprising a novel optimization stage and a blending stage to enable multi-modality control through conditions. (a) First we apply our latent optimization strategy, where we adjust the direction of gradients and identify the optimal latent vector every &#964; steps, followed by the normal reverse diffusion process. After that, we apply the latent blending strategy until the denoising process is complete. (b) We depict how we optimize the latent vector with prompts from one or more modalities as conditions.
-</p>
+      <div class="hero-body">          
 
         <!--/ Architecture. -->
         <div class="section-title">  
@@ -221,7 +220,9 @@
             </div>
           </div>
         </div>
-
+        <p>
+          We present a novel image inpainting framework, <strong>PILOT</strong>, comprising a novel optimization stage and a blending stage to enable multi-modality control through conditions. (a) First we apply our latent optimization strategy, where we adjust the direction of gradients and identify the optimal latent vector every &#964; steps, followed by the normal reverse diffusion process. After that, we apply the latent blending strategy until the denoising process is complete. (b) We depict how we optimize the latent vector with prompts from one or more modalities as conditions.
+        </p>
       </div>
     </div>
   </section>
