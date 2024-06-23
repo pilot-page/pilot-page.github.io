@@ -2,31 +2,28 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description"
-        content="pilot-page">
+  <meta name="description" content="pilot-page">
   <meta name="keywords" content="pilot-page">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Coherent and Multi-modality Image Inpainting via Latent Space Optimization</title>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3YHT6M18Z2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3YHT6M18Z2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || []
+    function gtag () { dataLayer.push(arguments) }
+    gtag('js', new Date())
 
-  gtag('config', 'G-3YHT6M18Z2');
-</script>
+    gtag('config', 'G-3YHT6M18Z2');
+  </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -37,56 +34,59 @@
 </head>
 <body>
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Co hedrent and Multi-modality Image Inpainting via Latent Space Optimization</h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://github.com/Lingzhi-Pan">Lingzhi Pan</a><sup><span>&#9824;</span></sup>,</span>
-            <span class="author-block">
-              <a href="https://people.epfl.ch/tong.zhang?lang=en">Tong Zhang</a><sup><span>&#9827;</span></sup></span><br>
-            <span class="author-block">
-              <a href="https://github.com/Alex-Lord">Bingyuan CHEN</a><sup><span>&#9824;</span></sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://github.com/zaqai">Qi Zhou</a><sup><span>&#9824;</span></sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://gr.xjtu.edu.cn/en/web/wei.ke">Wei Ke</a><sup><span>&#9824;</span></sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://people.epfl.ch/sabine.susstrunk">Sabine Susstrunk</a><sup><span>&#9827;</span></sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://people.epfl.ch/mathieu.salzmann">Mathieu Salzmann</a><sup><span>&#9827;</span></sup>,
-            </span>
-          </div>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">PILOT: Coherent and Multi-modality Image Inpainting via Latent
+              Space Optimization</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://github.com/Lingzhi-Pan">Lingzhi Pan</a><sup><span>&#9824;</span></sup>,</span>
+              <span class="author-block">
+                <a href="https://people.epfl.ch/tong.zhang?lang=en">Tong
+                  Zhang</a><sup><span>&#9827;</span></sup>,</span>
+              <span class="author-block">
+                <a href="https://github.com/Alex-Lord">Bingyuan CHEN</a><sup><span>&#9824;</span></sup>,<br>
+              </span>
+              <span class="author-block">
+                <a href="https://github.com/zaqai">Qi Zhou</a><sup><span>&#9824;</span></sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://gr.xjtu.edu.cn/en/web/wei.ke">Wei Ke</a><sup><span>&#9824;</span></sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://people.epfl.ch/sabine.susstrunk">Sabine Susstrunk</a><sup><span>&#9827;</span></sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://people.epfl.ch/mathieu.salzmann">Mathieu Salzmann</a><sup><span>&#9827;</span></sup>,
+              </span>
+            </div>
 
-          <!-- <div class="is-size-5 publication-authors">
+            <!-- <div class="is-size-5 publication-authors">
             <span class="author-block new-line"><sup></sup>Amazon</span><br>
           </div> -->
 
-          <div class="is-size-6 publication-authors">
-            <span class="author-block new-line"><sup><span>&#9824;</span> </sup>Xi'an Jiaotong University <sup><span>&#9824;</span> </sup> EPFL</span> <br>
-            <!-- <span class="author-block new-line"><sup><span>&#9827;</span> </sup>Corresponding author at Amazon</span> -->
-          </div>
+            <div class="is-size-6 publication-authors">
+              <span class="author-block new-line"><sup><span>&#9824;</span> </sup>Xi'an Jiaotong University
+                <sup><span>&#9824;</span> </sup> EPFL</span> <br>
+              <!-- <span class="author-block new-line"><sup><span>&#9827;</span> </sup>Corresponding author at Amazon</span> -->
+            </div>
 
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2312.04746"
-                   class="external-link button is-normal is-rounded is-dark" disabled>
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>Paper - Coming Soon!</span>
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2312.04746" class="external-link button is-normal is-rounded is-dark"
+                    disabled>
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>Paper - Coming Soon!</span>
                   </a>
-              </span>
-              <span class="link-block">
+                </span>
+                <!-- <span class="link-block">
                 <a href="./static/images/video.mp4" download
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -94,48 +94,47 @@
                   </span>
                   <span>Video (mp4)</span>
                   </a>
-              </span>
-              <span class="link-block">
-                <a href="https://github.com/Lingzhi-Pan/PILOT"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
+              </span> -->
+                <span class="link-block">
+                  <a href="https://github.com/Lingzhi-Pan/PILOT"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
                       <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
+                    </span>
+                    <span>Code</span>
                   </a>
-              </span>
-              <!-- Dataset Link. -->
-              <span class="link-block">
-                <a href="https://pilotdemo.site/"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
+                </span>
+                <!-- Dataset Link. -->
+                <span class="link-block">
+                  <a href="https://pilotdemo.site/" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
                       <i class="fas fa-laptop"></i>
-                  </span>
-                  <span>Demo</span>
+                    </span>
+                    <span>Demo</span>
                   </a>
-            </div>
+              </div>
 
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- <video id="teaser" autoplay muted loop playsinline height="100%" controls>
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <!-- <video id="teaser" autoplay muted loop playsinline height="100%" controls>
         <source src="./static/videos/Diffuse_to_Choose_DemoReel.mp4" type="video/mp4">
       </video> -->
 
-      <img src="https://oss.zaqai.com/img/202403230201291.gif" alt="">
+        <img src="https://oss.zaqai.com/img/202403230201291.gif" alt="">
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="hero teaser">
+  <!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video id="teaser" autoplay muted loop playsinline height="100%" controls>
@@ -144,120 +143,156 @@
 
     </div>
   </div>
-</section>
+</section> -->
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="static/images/teaser.png"
-                   alt="Teaser."/>
-      <h2 class="subtitle has-text-centered">
-        PILOT enables users to generate images in single and multiple modalities, such as text, text + image prompt, text + scribbles, and subject as reference.
-      </h2>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            With the advancements in denoising diffusion probabilistic models (DDPMs), image inpainting has undergone a significant evolution, transitioning from filling information based on nearby regions to generating content conditioned on various factors such as text, exemplar images, sketches, etc. However, existing methods often necessitate fine-tuning of the model or concatenation of latent vectors, leading to drawbacks such as generation failure due to overfitting and inconsistent foreground generation. In this paper, we argue that the current large models are powerful enough to generate realistic images without further tuning. Hence, we introduce PILOT (in<strong>P</strong>ainting v<strong>I</strong>a <strong>L</strong>atent <strong>O</strong>p<strong>T</strong>imization), an optimization approach grounded on a novel semantic centralization and background loss to identify latent spaces capable of generating inpainted regions that exhibit high fidelity to user-provided prompts while maintaining coherence with the background region. Crucially, our method seamlessly integrates with any pre-trained model, including ControlNet and DreamBooth, making it suitable for deployment in multi-modal editing tools. Our qualitative and quantitative evaluations demonstrate that our method outperforms existing approaches by generating more coherent, diverse, and faithful inpainted regions to the provided prompts.
-          </p>
-          <!-- <p>
-            We present <strong>Diffuse to Choose</strong>, a novel diffusion-based image-conditioned inpainting model that efficiently balances fast inference with the retention of high-fidelity details in a given reference item while ensuring accurate semantic manipulations in the given scene content. Our approach is based on incorporating fine-grained features from the reference image directly into the latent feature maps of the main diffusion model, alongside with a perceptual loss to further preserve the reference item's details. We conducted extensive testing on both in-house and publicly available datasets, and showed that Diffuse to Choose is superior to existing zero-shot diffusion inpainting methods as well as few-shot diffusion personalization algorithms like <a href="https://arxiv.org/abs/2305.01257" target="_blank">DreamPaint</a>.
-          </p> -->
-        </div>
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="static/images/teaser.png" alt="Teaser." />
+        <h2 class="subtitle has-text-centered">
+          PILOT enables users to generate images in single and multiple modalities, such as text, text + image prompt,
+          text + scribbles, and subject as reference.
+        </h2>
       </div>
     </div>
-    <!--/ Abstract. -->
-  </div>
-</section>
+  </section>
 
-<section class="hero is-light is-small">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
+
+
+
+
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              With the advancements in denoising diffusion probabilistic models (DDPMs), image inpainting has undergone
+              a significant evolution, transitioning from filling information based on nearby regions to generating
+              content conditioned on various factors such as text, exemplar images, sketches, etc. However, existing
+              methods often necessitate fine-tuning of the model or concatenation of latent vectors, leading to
+              drawbacks such as generation failure due to overfitting and inconsistent foreground generation. In this
+              paper, we argue that the current large models are powerful enough to generate realistic images without
+              further tuning. Hence, we introduce PILOT (in<strong>P</strong>ainting v<strong>I</strong>a
+              <strong>L</strong>atent <strong>O</strong>p<strong>T</strong>imization), an optimization approach grounded
+              on a novel semantic centralization and background loss to identify latent spaces capable of generating
+              inpainted regions that exhibit high fidelity to user-provided prompts while maintaining coherence with the
+              background region. Crucially, our method seamlessly integrates with any pre-trained model, including
+              ControlNet and DreamBooth, making it suitable for deployment in multi-modal editing tools. Our qualitative
+              and quantitative evaluations demonstrate that our method outperforms existing approaches by generating
+              more coherent, diverse, and faithful inpainted regions to the provided prompts.
+            </p>
+            <!-- <p>
+            We present <strong>Diffuse to Choose</strong>, a novel diffusion-based image-conditioned inpainting model that efficiently balances fast inference with the retention of high-fidelity details in a given reference item while ensuring accurate semantic manipulations in the given scene content. Our approach is based on incorporating fine-grained features from the reference image directly into the latent feature maps of the main diffusion model, alongside with a perceptual loss to further preserve the reference item's details. We conducted extensive testing on both in-house and publicly available datasets, and showed that Diffuse to Choose is superior to existing zero-shot diffusion inpainting methods as well as few-shot diffusion personalization algorithms like <a href="https://arxiv.org/abs/2305.01257" target="_blank">DreamPaint</a>.
+          </p> -->
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+    </div>
+  </section>
+
+
+
+  <section class="hero is-light is-small">
+    <div class="container is-max-desktop">
+      <div class="hero-body">          <p>
+  We present a novel image inpainting framework, <strong>PILOT</strong>, comprising a novel optimization stage and a blending stage to enable multi-modality control through conditions. (a) First we apply our latent optimization strategy, where we adjust the direction of gradients and identify the optimal latent vector every &#964; steps, followed by the normal reverse diffusion process. After that, we apply the latent blending strategy until the denoising process is complete. (b) We depict how we optimize the latent vector with prompts from one or more modalities as conditions.
+</p>
+
         <!--/ Architecture. -->
-        <div class="section-title">
+        <div class="section-title">  
+
           <h2 class="title is-3 is-centered">Model Architecture</h2>
         </div>
         <div class="columns is-centered has-text-centered">
           <div class="column">
             <div class="publication-img">
-              <img id="architecture" src="static/images/framework_a.png"/>
-              <img id="architectureb" src="static/images/framework_b.png"/>
+              <img id="architecture" src="static/images/framework_a.png" />
+              <p>(a) Full pipeline of PILOT. </p><br>
+              
+              <img id="architectureb" src="static/images/framework_b.png" />
+              <p>(b) Illustration of our optimization strategy.</p>
+              
             </div>
           </div>
         </div>
-        <!-- <p>
-          We utilize a secondary U-Net Encoder to inject fine-grained details into the diffusion process. This begins with masking the source image and then inserting the reference image within the masked area. The resulting pixel-level 'hint' is subsequently adapted by a shallow CNN, aligning it with the VAE output dimensions of the source image, before element-wise added to it. Following this, a U-Net Encoder processes the adapted hint, where at each scale of the U-Net, a FILM module affinely aligns the skip-connected features from the main U-Net Encoder with the pixel-level features from the hint U-Net Encoder. Finally, these aligned feature maps, combined with the main image conditioning, facilitate the inpainting of the masked region.
-        </p> -->
+
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 
-<section class="hero is-light is-small">
-  <div class="container is-max-desktop">
+  <section class="hero is-light is-small">
+    <div class="container is-max-desktop">
 
       <div class="section-title">
         <br>
         <h2 class="title is-3">Qualitative Results</h2>
       </div>
 
-    <div class="columns is-centered">
+      <div class="columns is-centered">
 
-      <!-- Cross domain. -->
-      <div class="column">
-        <div class="content">
+        <!-- Cross domain. -->
+        <div class="column">
+          <div class="content">
 
-          <p>
-            PILOT can generate images in the guidance of multi conditions.  <br>
-          </p>
+            <p>
+              PILOT can generate images in the guidance of multi conditions. <br>
+            </p>
             <div class="publication-img">
-              <img id="examples1" src="static/images/text_add.png"/>
-              <p style="text-align: center; font-weight: bold; font-size: 24px;">Text prompts</p>
-              <img id="examples2" src="static/images/controlNet_results.png"/>
-              <p style="text-align: center; font-weight: bold; font-size: 24px;">Multi-modality-based prompts</p>
-              <img id="examples3" src="static/images/ip_adapter_a.png"/>
-              <img id="examples4" src="static/images/ip_adapter_b.png"/>
-              <p style="text-align: center; font-weight: bold; font-size: 24px;">Image prompts</p>
-              <img id="examples5" src="static/images/subject.png"/>
-              <p style="text-align: center; font-weight: bold; font-size: 24px;">Subject guidance</p>
-              <img id="examples6" src="static/images/personalize.png"/>
-              <img id="examples7" src="static/images/monai.png"/>
-              <p style="text-align: center; font-weight: bold; font-size: 24px;">Personalize style</p>
+              <p>
+                You can use text prompts to guide the inpainting process. <br>
+              </p>
+              <img id="examples1" src="static/images/text_add.png" />
+              <!-- <p style="text-align: center; font-weight: bold; font-size: 24px;">Text prompts</p> -->
+              <p>
+                <br> And use multi-modality-based prompts.
+              </p>
+              <img id="examples2" src="static/images/controlNet_results.png" />
+              <!-- <p style="text-align: center; font-weight: bold; font-size: 24px;">Multi-modality-based prompts</p> -->
+              <p>
+                <br> And use image prompts.
+              </p>
+              <img id="examples3" src="static/images/ip_adapter_a.png" />
+              <img id="examples4" src="static/images/ip_adapter_b.png" />
+              <!-- <p style="text-align: center; font-weight: bold; font-size: 24px;">Image prompts</p> -->
+              <p>
+                <br> You can also use subject guidance to guide the inpainting process.
+              </p>
+              <img id="examples5" src="static/images/subject.png" />
+              <!-- <p style="text-align: center; font-weight: bold; font-size: 24px;">Subject guidance</p> -->
+              <p>
+                <br> Or try personalize style.
+              </p>
+              <img id="examples6" src="static/images/personalize.png" />
+              <img id="examples7" src="static/images/monai.png" />
+              <!-- <p style="text-align: center; font-weight: bold; font-size: 24px;">Personalize style</p> -->
               <br><br>
             </div>
+          </div>
         </div>
+        <!--/ Cross domain. -->
+
+        <!-- New domain editing. -->
       </div>
-      <!--/ Cross domain. -->
-
-      <!-- New domain editing. -->
+      <!--/ New domain editing. -->
     </div>
-    <!--/ New domain editing. -->
-  </div>
-</section>
+  </section>
 
 
 
 
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <p>If you find our work useful, please cite our paper:</p>
-    <!-- <pre><code>@misc{seyfioglu2024diffuse,
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <p>If you find our work useful, please cite our paper:</p>
+      <!-- <pre><code>@misc{seyfioglu2024diffuse,
       title={Diffuse to Choose: Enriching Image Conditioned Inpainting in Latent Diffusion Models for Virtual Try-All}, 
       author={Mehmet Saygin Seyfioglu and Karim Bouyarmane and Suren Kumar and Amir Tavanaei and Ismail B. Tutar},
       year={2024},
@@ -265,36 +300,36 @@
       archivePrefix={arXiv},
       primaryClass={cs.CV}
 }</code></pre> -->
-  </div>
-</section>
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="https://arxiv.org/abs/notyet">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="somegithublink" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
     </div>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            Website source code based on the <a href="https://nerfies.github.io/"> Nerfies</a> and <a href="https://textual-inversion.github.io/"> Textual Inversion</a>  project pages. If you want to reuse it, please credit them appropriately.
-          </p>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <a class="icon-link" href="https://arxiv.org/abs/notyet">
+          <i class="fas fa-file-pdf"></i>
+        </a>
+        <a class="icon-link" href="somegithublink" class="external-link" disabled>
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+            <p>
+              Website source code based on the <a href="https://nerfies.github.io/"> Nerfies</a> and <a
+                href="https://textual-inversion.github.io/"> Textual Inversion</a> project pages. If you want to reuse
+              it, please credit them appropriately.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
 </body>
 </html>
-
